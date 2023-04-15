@@ -5,7 +5,7 @@ from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
-
+#function
 def generate_key(password: str) -> bytes:
     """Generate a encryption key from a password using PBKDF2."""
     salt = b'specialcode'  # Salt can be added to improve the key generation process
